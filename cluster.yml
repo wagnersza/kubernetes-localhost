@@ -1,0 +1,22 @@
+nodes:
+    - address: 192.168.33.10
+      user: vagrant
+      role:
+        - controlplane
+        - etcd
+        - worker
+      ssh_key_path: .vagrant/machines/kube01/virtualbox/private_key
+    - address: 192.168.33.20
+      user: vagrant
+      role:
+        - controlplane
+        - etcd
+        - worker
+      ssh_key_path: .vagrant/machines/kube02/virtualbox/private_key
+    - address: 192.168.33.30
+      user: vagrant
+      role:
+        - controlplane
+        - etcd
+        - worker
+      ssh_key_path: .vagrant/machines/kube03/virtualbox/private_key
